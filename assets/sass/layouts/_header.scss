@@ -127,8 +127,9 @@
         .header_textlogo {
             display: block;
             width: 100%;
-            margin: 5px auto;
+            margin: 10px auto 3px;
             @include font-face;
+            background-color: aqua;
 
             // img {
             //     max-width: 50px;
