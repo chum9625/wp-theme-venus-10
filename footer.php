@@ -31,7 +31,7 @@
     <div id="sp-fixed-menu" class="for-sp">
   <ul>
       <li><a href="<?php echo home_url() ?>/kind/treatment/">施術</a></li>
-      <li><a href="<?php echo home_url() ?>/contact"><i class="far fa-envelope fa-2x"></i></a></li>
+      <li><a href="<?php echo home_url() ?>/contact"><i class="far fa-envelope fa-lg"></i></a></li>
     <li><a href="<?php echo home_url() ?>/kind/lesson/">講座</a></li>
 </ul>
 </div>
