@@ -8,7 +8,7 @@
 
 - Local
 - VScode
-- Windows10
+- Windows 10
 
 ## Must
 
