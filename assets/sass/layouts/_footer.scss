@@ -37,10 +37,10 @@
     .footer_copyright {
         color: $white;
         padding: 15px 0;
-        @include font-face;
+        // @include font-face;
 
         small {
-            @include fs(20);
+            @include fs(12);
         }
     }
 }
