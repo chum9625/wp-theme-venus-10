@@ -1,0 +1,207 @@
+body {
+    color: #333;
+    font-family: $serif;
+    letter-spacing: 0.2em;
+}
+
+.font-normal {
+    font-family: $Normal;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: arial, helvetica, clean, sans-serif;
+    @include fs(14);
+}
+
+code,
+kbd,
+pre,
+samp,
+tt {
+    font-family: monospace;
+    line-height: 100%;
+    @include fs(14);
+}
+
+blockquote,
+dl,
+ol,
+pre,
+td,
+th,
+ul {
+    line-height: 1.5;
+    @include fs(14);
+}
+
+p {
+    line-height: 1.5;
+    @include fs(16);
+}
+
+dl,
+ol,
+ul {
+    list-style-position: outside;
+    @include fs(14);
+}
+
+.supp {
+    @include fs(12);
+}
+
+blockquote p,
+dd p,
+dl p,
+dt p,
+ol p,
+pre p,
+td p,
+th p,
+ul p {
+    @include fs(14);
+    padding: 10px 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+em {
+    font-weight: bold;
+}
+
+b {
+    font-weight: bold;
+}
+
+// Base Link
+a {
+    color: #333;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+//Font
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+
+    a {
+        font-weight: bold;
+    }
+}
+
+@media #{$desktop} {
+    .for-sp {
+        display: none;
+    }
+}
+
+@media #{$smartphone} {
+
+    blockquote,
+    dl,
+    ol,
+    pre,
+    td,
+    th,
+    ul {
+        @include fs(12);
+    }
+
+    p {
+        @include fs(12);
+        padding: 5px 0;
+    }
+
+    dl,
+    ol,
+    ul {
+        @include fs(12);
+    }
+
+    .supp {
+        @include fs(10);
+    }
+
+    blockquote p,
+    dd p,
+    dl p,
+    dt p,
+    ol p,
+    pre p,
+    td p,
+    th p,
+    ul p {
+        @include fs(12);
+        padding: 5px 0;
+    }
+
+    /*メニューをページ下部に固定*/
+    #sp-fixed-menu {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        font-size: 0;
+        opacity: 0.9;
+        z-index: 99;
+
+        /*メニューを横並びにする*/
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        li {
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+            border-right: 1px solid #fff;
+
+            /*左側メニューを緑色*/
+            &:first-child {
+                background: #998130;
+            }
+
+            /*n個目メニューを黄色*/
+            &:nth-of-type(2) {
+                background: #7db47d;
+            }
+
+            /*右側メニューをラベンダー色*/
+            &:last-child {
+                background: #ac3175;
+            }
+        }
+
+        /*ボタンを調整*/
+        a {
+            color: #fff;
+            text-align: center;
+            display: block;
+            width: 100%;
+            padding: 20px;
+            text-decoration: none;
+        }
+    }
+
+}
