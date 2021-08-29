@@ -164,7 +164,7 @@
 @mixin font-face {
     @import url(https://fonts.googleapis.com/css?family=Noto+Serif+JP%7CParisienne&display=swap);
     font-family: 'Parisienne', cursive;
-    font-size: 18px;
+    @include fs(16);
 
     a {
         font-weight: lighter;
