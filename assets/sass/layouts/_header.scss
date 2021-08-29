@@ -3,7 +3,7 @@
         @include container;
         @include flex;
         align-items: center;
-        // justify-content: space-between;SNS削除したので不要
+        justify-content: space-between;//SNS削除したので不要？
         padding: 20px 0 0;
         // background-color: aqua;
     }
@@ -65,7 +65,7 @@
         justify-content: center;
         padding: 5px 0;
 
-        .header_nav {}
+        // .header_nav {}
     }
 
     .header_menu {
@@ -108,8 +108,7 @@
         background-color: $white;
         z-index: 97;
         padding: 5px 0;
-        // background-color: aqua;デバッグ用
-        position: relative;
+        // background-color: aqua;//デバッグ用
 
 
         .header_desc,
@@ -121,13 +120,15 @@
         .header_inner {
             padding-top: 0;
             padding-bottom: 0;
+            text-align: center;
+            // background-color: aqua;
         }
 
         .header_textlogo {
             display: block;
+            width: 100%;
             margin: 5px auto;
             @include font-face;
-            // background-color: aqua;
 
             // img {
             //     max-width: 50px;
@@ -135,9 +136,9 @@
             // }
         }
 
-        .header_sns {
-            margin: 0 auto;
-        }
+        // .header_sns {
+        //     margin: 0 auto;
+        // }
 
         .header_links {
             display: block;
