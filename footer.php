@@ -18,15 +18,17 @@
 
             </div>
         </div>
-    </footer>
 
-    <div class="for-sp sp-fixed-menu">
-        <ul>
-            <li><a href="<?php echo home_url() ?>/kind/treatment/">施術</a></li>
-            <li><a href="<?php echo home_url() ?>/contact"><i class="far fa-envelope fa-lg"></i></a></li>
-            <li><a href="<?php echo home_url() ?>/kind/lesson/">講座</a></li>
-        </ul>
-    </div>
+        <section class="for-sp">
+            <div class="sp-fixed-menu">
+                <ul>
+                    <li><a href="<?php echo home_url() ?>/kind/treatment/">施術</a></li>
+                    <li><a href="<?php echo home_url() ?>/contact"><i class="far fa-envelope fa-lg"></i></a></li>
+                    <li><a href="<?php echo home_url() ?>/kind/lesson/">講座</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
 	<?php
 	if ( is_home() ) {
 		wp_enqueue_style( 'slick-carousel', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' );
