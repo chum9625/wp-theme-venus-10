@@ -69,20 +69,20 @@
     /*メニューをページ下部に固定*/
     .sp-fixed-menu {
         position: fixed;
-        // max-width: 540px;
         width: 100%;
         bottom: 0px;
-        font-size: 0;
+        // font-size: 0;
         opacity: 0.9;
         z-index: 99;
 
         /*メニューを横並びにする*/
         ul {
-            display: flex;
-            list-style: none;
+            @include flex;
+            // flex-wrap: nowrap;
+            // display: flex;
+            // list-style: none;
             padding: 0;
             margin: 0;
-            // max-width: 540px;
             width: 100%;
         }
 
