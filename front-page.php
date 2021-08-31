@@ -8,48 +8,49 @@
 	</div>
 <?php endif; ?>
 
-<section class="sec">
-	<div class="container">
-		<header class="sec_header">
+<div class="wrap">
 
-			<h2 class="title">頑張る人を美しく<span>welcome</span></h2>
+  <section class="sec">
+    <div class="container">
+		<header class="sec_header">
+      <h2 class="title">頑張る人を美しく<span>welcome</span></h2>
 		</header>
 
-        <div class="row">
-            <div class="appear welcome">
-                <?php
+    <div class="row">
+      <div class="col-12 appear welcome">
+        <?php
                 $page_data = get_page_by_path('welcome');
                 $page = get_post($page_data);
                 $content = $page -> post_content;
                 echo $content;
                 ?>
             </div>
+          </div>
+
         </div>
+      </section>
 
-	</div>
-</section>
+      <section class="sec">
+        <div class="container">
+          <header class="sec_header">
+            <h2 class="title">更新情報<span>update</span></h2>
+          </header>
 
-<section class="sec">
-	<div class="container">
-		<header class="sec_header">
-			<h2 class="title">更新情報<span>update</span></h2>
-		</header>
-
-		<div class="row">
-			<?php if ( have_posts() ) : ?>
-				<?php
+          <div class="row">
+            <?php if ( have_posts() ) : ?>
+              <?php
 				while ( have_posts() ) :
 					the_post();
 					?>
 					<div class="col-md-4">
-						<?php get_template_part( 'template-parts/loop', 'news' ); ?>
+            <?php get_template_part( 'template-parts/loop', 'news' ); ?>
 					</div>
-				<?php endwhile; ?>
-			<?php endif; ?>
-		</div>
+          <?php endwhile; ?>
+          <?php endif; ?>
+        </div>
 
-		<p class="sec_btn">
-			<?php
+        <p class="sec_btn">
+          <?php
 			$news      = get_term_by( 'slug', 'news', 'category' );
 			$news_link = get_term_link( $news, 'category' );
 			?>
@@ -60,24 +61,24 @@
 </section>
 
 <section class="sec bg-gray">
-	<div class="container">
-		<header class="sec_header">
-			<h2 class="title">店舗情報<span>information</span></h2>
+  <div class="container">
+    <header class="sec_header">
+      <h2 class="title">店舗情報<span>information</span></h2>
 		</header>
 
 		<div class="row">
-			<div class="col-md-6">
-				<a href="<?php echo get_permalink( 2112 ); ?>" class="bnr" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/bnr_about@2x.jpg')">
+      <div class="col-md-6">
+        <a href="<?php echo get_permalink( 2112 ); ?>" class="bnr" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/bnr_about@2x.jpg')">
 					<div class="bnr_inner">
-						サロンのご案内<span>about</span>
+            サロンのご案内<span>about</span>
 					</div>
 				</a>
 			</div>
 
 			<div class="col-md-6">
-				<a href="<?php echo home_url('/menu/'); ?>" class="bnr" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/bnr_price@2x.jpg')">
+        <a href="<?php echo home_url('/menu/'); ?>" class="bnr" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/bnr_price@2x.jpg')">
 					<div class="bnr_inner">
-						メニュー<span>menu</span>
+            メニュー<span>menu</span>
 					</div>
 				</a>
 			</div>
@@ -86,26 +87,27 @@
 </section>
 
 <section class="sec sec-bg">
-	<div class="sec_inner">
-		<header class="sec_header">
-			<h2 class="title">お問い合わせ<span>contact</span></h2>
+  <div class="sec_inner">
+    <header class="sec_header">
+      <h2 class="title">お問い合わせ<span>contact</span></h2>
 		</header>
 
 		<div class="sec_body contact">
-			<div class="contact_icon">
-				<i class="fas fa-phone"></i>
+      <div class="contact_icon">
+        <i class="fas fa-phone"></i>
 			</div>
 			<div class="contact_body">
-				<p>
-					お気軽にお問い合わせください
+        <p>
+          お気軽にお問い合わせください
 					<span>03-1234-5678</span>
 				</p>
 			</div>
 		</div>
 
 		<div class="sec_btn">
-			<a href="<?php echo home_url('/contact/') ?>" class="btn btn-default">メールフォーム<i class="fas fa-angle-right"></i></a>
+      <a href="<?php echo home_url('/contact/') ?>" class="btn btn-default">メールフォーム<i class="fas fa-angle-right"></i></a>
 		</div>
 	</div>
 </section>
 <?php get_footer(); ?>
+</div>

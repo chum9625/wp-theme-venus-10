@@ -23,7 +23,7 @@
 			<div class="header_logo">
 				<h1><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo@2x.png" alt="NOBLE VENUS"></a></h1>
 			</div>
-      
+
       <div class="header_textlogo header-sp">
         <h1><a href="<?php echo home_url(); ?>">Noble Venus</a></h1>
 			</div>

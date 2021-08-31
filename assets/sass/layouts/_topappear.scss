@@ -1,39 +1,39 @@
 /* トップ固定ページ読み込み用CSS */
 .appear h2 {
-    @include fs(20);
-    text-align: center;
-    width: 100%;
-    padding-top: 50px;
-    // background-color: cadetblue;
-    background: url(../img/common/top-h2.png) no-repeat 50% 0; //フレーム枠上部
+  @include fs(20);
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+  // background-color: cadetblue;
+  background: url(../img/common/top-h2.png) no-repeat 50% 0; //フレーム枠上部
 }
 
 .appear h3 {
-    @include fs(20);
-    text-align: center;
-    width: 100%;
-    padding-top: 50px;
-    background: url(../img/common/top-h3.png) no-repeat 50% 0; //フレーム枠上部
+  @include fs(20);
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+  background: url(../img/common/top-h3.png) no-repeat 50% 0; //フレーム枠上部
 }
 
 .appear h4 {
-    @include fs(20);
-    text-align: center;
-    width: 100%;
-    padding-top: 50px;
-    background: url(../img/common/top-h4.png) no-repeat 50% 0; //フレーム枠上部
+  @include fs(20);
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+  background: url(../img/common/top-h4.png) no-repeat 50% 0; //フレーム枠上部
 
-    // ::after {
-    //     content: '';
-    //     width: 100%;
-    //     height: 30px;
-    //     display: block;
-    //     background: #666 url(../img/common/top-h2-0.png) no-repeat 50% 0; //フレーム枠下部
+  // ::after {
+  //     content: '';
+  //     width: 100%;
+  //     height: 30px;
+  //     display: block;
+  //     background: #666 url(../img/common/top-h2-0.png) no-repeat 50% 0; //フレーム枠下部
 }
 
 .welcome p {
-    @include fs(16);
-    // font-size: 1.6rem;
-    color: $black;
-    padding: 30px;
+  @include fs(16);
+  // font-size: 1.6rem;
+  color: $black;
+  padding: 30px;
 }
