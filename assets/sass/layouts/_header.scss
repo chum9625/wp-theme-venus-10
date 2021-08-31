@@ -125,11 +125,13 @@
         }
 
         .header_textlogo {
-            display: block;
-            width: 100%;
-            margin: 10px auto 3px;
-            @include font-face;
-            // background-color: aqua;
+          height: auto;
+          margin: 0 auto;
+          display: block;
+          // text-align: center;
+            // margin: 10px auto 3px;
+          @include font-face;
+          background-color: aqua;
 
             // img {
             //     max-width: 50px;

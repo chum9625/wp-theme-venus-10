@@ -17,20 +17,22 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
+
 	<header class="header">
 		<div class="header_inner">
 			<div class="header_logo">
 				<h1><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo@2x.png" alt="NOBLE VENUS"></a></h1>
 			</div>
-
-            <div class="header_textlogo header-sp">
-                <h1><a href="<?php echo home_url(); ?>">Noble Venus</a></h1>
+      
+      <div class="header_textlogo header-sp">
+        <h1><a href="<?php echo home_url(); ?>">Noble Venus</a></h1>
 			</div>
 
 			<div class="header_desc">
-				<p><?php bloginfo( 'description' ); ?></p>
+        <p><?php bloginfo( 'description' ); ?></p>
 			</div>
-            <?php get_search_form(); ?>
+
+        <?php get_search_form(); ?>
 		</div>
 
 		<div class="header_links">
