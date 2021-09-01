@@ -125,18 +125,10 @@
         }
 
         .header_textlogo {
+          display: block;
           height: auto;
           margin: 0 auto;
-          display: block;
-          // text-align: center;
-            // margin: 10px auto 3px;
           @include font-face;
-          // background-color: aqua;
-
-            // img {
-            //     max-width: 50px;
-            //     height: auto;
-            // }
         }
 
         // .header_sns {
@@ -172,7 +164,7 @@
         }
 
         .header_menu {
-            display:inline-block;
+            display:block;
             position: fixed;
             top: 12px;
             left: 22px;
