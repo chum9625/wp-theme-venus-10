@@ -33,7 +33,6 @@
   width: $width;
 
   @include clearfix;
-
   @media #{$smartphone} {
     width: auto;
   }
@@ -47,7 +46,6 @@
   width: $site_width;
 
   @include clearfix;
-
   @media #{$smartphone} {
     width: auto;
   }
@@ -85,7 +83,6 @@
     @if $size>=18 {
       font-size: 18px;
     }
-
     @else {
       font-size: $size+px;
     }
@@ -155,20 +152,17 @@
 }
 
 // 円形画像のIE対策
-@mixin ofi() {
+@mixin ofi(){
   object-fit: cover;
   font-family: 'object-fit: cover';
 }
 
-// 筆記体※Localだと反映されないので注意
+// 筆記体
 @mixin font-face {
-  @import url(https://fonts.googleapis.com/css?family=Noto+Serif+JP%7CParisienne&display=swap);
-  // @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Parisienne&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP%7CParisienne&display=swap');
   font-family: 'Parisienne', cursive;
-  @include fs(16);
-
   a {
-    font-weight: lighter;
-    text-decoration: none;
+      font-weight: lighter;
+      text-decoration: none;
   }
 }

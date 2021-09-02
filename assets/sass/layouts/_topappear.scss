@@ -1,6 +1,7 @@
 /* トップ固定ページ読み込み用CSS */
 .appear h2 {
   @include fs(20);
+  color: $green;
   text-align: center;
   width: 100%;
   padding-top: 50px;
@@ -20,7 +21,7 @@
   @include fs(20);
   text-align: center;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 40px;
   background: url(../img/common/top-h4.png) no-repeat 50% 0; //フレーム枠上部
 
   // ::after {
@@ -35,5 +36,5 @@
   @include fs(16);
   // font-size: 1.6rem;
   color: $black;
-  padding: 30px;
+  padding: 50px;
 }

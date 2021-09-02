@@ -125,10 +125,11 @@
         }
 
         .header_textlogo {
-          display: block;
-          height: auto;
-          margin: 0 auto;
           @include font-face;
+          @include fs(16);
+            display:inline-block;
+            height: auto;
+            margin: 0 auto;
         }
 
         // .header_sns {
