@@ -68,3 +68,9 @@ function remove_menus () {
 		}
 	}
 	add_action('admin_menu', 'remove_menus');
+
+	// WordPressダッシュボードのフッターテキストを変更する
+function custom_admin_footer() {
+	echo 'いつもありがとうございます。<a href="https://www.chum9625.com/" target="_blank" rel="noopener">ChumTech</a>　=・ω・=';
+}
+add_filter('admin_footer_text', 'custom_admin_footer');
