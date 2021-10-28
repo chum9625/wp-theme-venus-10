@@ -42,3 +42,29 @@ function register_my_menus() {
         'spbtm-menu' => 'SP Bottom Menu',
     ));
 }
+
+//　ダッシュボードウィジットのカスタマイズ
+function wpqw_remove_dashboard_widget() {
+	if ( ! current_user_can( 'administrator' ) ) {
+		remove_action( 'welcome_panel', 'wp_welcome_panel' );
+		remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
+		remove_meta_box( 'dashboard_activity', 'dashboard', 'normal' );
+		remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
+		remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );
+	}
+}
+add_action( 'wp_dashboard_setup', 'wpqw_remove_dashboard_widget' );
+
+// ダッシュボードサイドメニューのカスタマイズ
+function remove_menus () {
+	if (!current_user_can('administrator')) {
+		remove_menu_page('wpcf7'); //									Contact Form 7
+//		remove_menu_page( 'upload.php' ); //				メディア
+		remove_menu_page( 'edit-comments.php' );//	コメント
+		remove_menu_page( 'themes.php' ); //				外観
+		remove_menu_page( 'users.php' ); //					ユーザー
+		remove_menu_page( 'profile.php' ); //				プロフィール
+		remove_menu_page( 'tools.php' ); //					ツール
+		}
+	}
+	add_action('admin_menu', 'remove_menus');

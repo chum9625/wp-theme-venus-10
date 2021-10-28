@@ -1,8 +1,17 @@
+<?php
+/**
+ * Index of Tomo Venus theme.
+ *
+ * @package Tomo Venus
+ */
+
+?>
+
 <?php get_header(); ?>
 
 <h2 class="pageTitle">更新情報<span>update</span></h2>
 
-<?php get_template_part('template-parts/breadcrumb'); ?>
+<?php get_template_part( 'template-parts/breadcrumb' ); ?>
 
 <main class="main">
 	<div class="container">
@@ -25,8 +34,8 @@
 							</div>
 						<?php endwhile; ?>
 					<?php endif; ?>
-				</div>
-                <?php if (function_exists( 'wp_pagenavi' ) ) { wp_pagenavi(); } ?>
+					</div>
+					<?php if( function_exists( 'wp_pagenavi' ) ) {  wp_pagenavi(); } ?>
 			</div>
 
 			<div class="col-12 col-md-3">
@@ -35,7 +44,6 @@
 			</div>
 		</div>
 	</div>
-
 </main>
 
 <?php get_footer(); ?>
