@@ -1,4 +1,4 @@
-# wp-theme-tomo-10
+# wp-theme-venus-10
 
 - WordPress Theme NobleVenus Ver1.0
 - This theme is for beauty sites.
