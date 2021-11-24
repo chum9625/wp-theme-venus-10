@@ -1,124 +1,124 @@
 .footer {
+  text-align: center;
+  padding: 50px 0;
+  background: $footer;
+
+  // .footer_inner {}
+
+  nav {
+    ul {
+      @include flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+
+      li {
+        padding: 5px 20px;
+
+        a {
+          text-decoration: none;
+          color: $white;
+          @include fs(14);
+        }
+      }
+    }
+  }
+
+  .footer_logo {
+    padding: 15px 0;
     text-align: center;
-    padding: 50px 0;
-    background: $footer;
 
-    // .footer_inner {}
-
-    nav {
-        ul {
-            @include flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-
-            li {
-                padding: 5px 20px;
-
-                a {
-                    text-decoration: none;
-                    color: $white;
-                    @include fs(14);
-                }
-            }
-        }
+    img {
+      width: 50%;
+      height: 50%;
     }
+  }
 
-    .footer_logo {
-        padding: 15px 0;
-        text-align: center;
+  .footer_copyright {
+    color: $white;
+    padding: 15px 0;
 
-        img {
-            width: 50%;
-            height: 50%;
-        }
+    small {
+      @include fs(12);
+      @include font-face;
     }
-
-    .footer_copyright {
-        color: $white;
-        padding: 15px 0;
-        // @include font-face;
-
-        small {
-            @include fs(12);
-        }
-    }
+  }
 }
 
 @media #{$smartphone} {
-    .footer {
-        nav {
-            ul {
-                display: block;
-                @include cf;
-                margin: 0 auto 15px;
-
-                li {
-                    padding: 5px 20px;
-
-                    a {
-                        text-decoration: none;
-                        color: $white;
-                        @include fs(14);
-                    }
-                }
-            }
-        }
-    }
-
-    /*メニューをページ下部に固定*/
-    .sp-fixed-menu {
-        position: fixed;
-        width: 100%;
-        bottom: 0px;
-        // font-size: 0;
-        opacity: 0.9;
-        z-index: 99;
-
-        /*メニューを横並びにする*/
-        ul {
-            @include flex;
-            // flex-wrap: nowrap;
-            // display: flex;
-            // list-style: none;
-            padding: 0;
-            margin: 0;
-            width: 100%;
-        }
+  .footer {
+    nav {
+      ul {
+        display: block;
+        @include cf;
+        margin: 0 auto 15px;
 
         li {
-            justify-content: center;
-            align-items: center;
-            width: 33.33%;
-            padding: 0;
-            margin: 0;
-            border-right: 1px solid #fff;
-            @include fs(15);
+          padding: 5px 20px;
 
-            /*左側メニューを緑色*/
-            &:first-child {
-                background: #998130;
-            }
-
-            /*n個目メニューを黄色*/
-            &:nth-of-type(2) {
-                background: #7db47d;
-            }
-
-            /*右側メニューをラベンダー色*/
-            &:last-child {
-                background: #ac3175;
-            }
-        }
-
-        /*ボタンを調整*/
-        a {
-            color: #fff;
-            text-align: center;
-            display: block;
-            width: 100%;
-            padding: 10px;
+          a {
             text-decoration: none;
+            color: $white;
+            @include fs(14);
+          }
         }
+      }
     }
+  }
+
+  /*メニューをページ下部に固定*/
+  .sp-fixed-menu {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    // font-size: 0;
+    opacity: 0.9;
+    z-index: 99;
+
+    /*メニューを横並びにする*/
+    ul {
+      @include flex;
+      // flex-wrap: nowrap;
+      // display: flex;
+      // list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    li {
+      justify-content: center;
+      align-items: center;
+      width: 33.33%;
+      padding: 0;
+      margin: 0;
+      border-right: 1px solid #fff;
+      @include fs(15);
+
+      /*左側メニューを緑色*/
+      &:first-child {
+        background: #998130;
+      }
+
+      /*n個目メニューを黄色*/
+      &:nth-of-type(2) {
+        background: #7db47d;
+      }
+
+      /*右側メニューをラベンダー色*/
+      &:last-child {
+        background: #ac3175;
+      }
+    }
+
+    /*ボタンを調整*/
+    a {
+      color: #fff;
+      text-align: center;
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-decoration: none;
+    }
+  }
 }
