@@ -2,7 +2,7 @@
 
 - WordPress Theme NobleVenus Ver1.0
 - This theme is for beauty sites.
-- wp-theme-tomo-00リポジトリの拡張版
+- wp-theme-venus-00リポジトリの拡張版
 
 ## 開発環境
 
