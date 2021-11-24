@@ -1,8 +1,8 @@
-# wp-theme-venus-10
+# wp-theme-tomo-10
 
-- WordPress Theme Tomo Venus Ver1.0
-- This theme is for Tomo only.
-- wp-theme-venus-00リポジトリの拡張版
+- WordPress Theme NobleVenus Ver1.0
+- This theme is for beauty sites.
+- wp-theme-tomo-00リポジトリの拡張版
 
 ## 開発環境
 
