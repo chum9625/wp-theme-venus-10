@@ -13,7 +13,7 @@ add_filter( 'document_title_parts', 'my_document_title_parts' );
 function my_document_title_parts( $title ) {
 	if ( is_home() ) {
 		unset( $title['tagline'] );
-		$title['title'] = 'Noble Vinusは女性のための会員制自律神経ケアサロンです。';
+		$title['title'] = 'Noble Vinusはレッスンも受けられる女性限定のケアサロンです。';
 	}
 	return $title;
 }
