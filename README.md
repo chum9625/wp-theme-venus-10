@@ -15,4 +15,4 @@
 - テーマは1つのみで開発する。
 - All in one migrationプラグイン必須。
 - 上記プラグインにてバックアップを作成し、git管理外に配置すること。（サイズ超過のためpush不可）
-- バックアップファイルパス：C:\Users\user-name\Local Sites\project-name\app
+- サニタイズ処理

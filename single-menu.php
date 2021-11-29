@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+/**
+ * This is single-menu page.
+ *
+ * @package WordPress
+ * @subpackage NobleVenus
+ * @since NobleVenus 1.0
+ */
+
+get_header(); ?>
 
 	<h2 class="pageTitle">メニュー<span>menu</span></h2>
 
@@ -25,10 +34,10 @@
 							<div class="article_pic">
 								<?php
 								$pic = get_field( 'pic' );
-								 // 大サイズ画像URL
+								// 大サイズ画像URL--!
 								$pic_url = $pic['sizes']['large'];
 								?>
-								<img src="<?php echo $pic_url; ?>" alt="">
+								<img src="<?php echo esc_url( $pic_url ); ?>" alt="">
 							</div>
 						</div>
 					</div>
@@ -52,8 +61,8 @@
 							<?php
 							$efficacies = get_field( 'efficacies' );
 							foreach ( $efficacies as $key => $efficacy ) {
-								echo $efficacy;
-								if ( $efficacy !== end( $efficacies ) ) {
+								echo esc_html( $efficacy );
+								if ( end( $efficacies ) !== $efficacy ) {
 									echo '、';
 								}
 							}

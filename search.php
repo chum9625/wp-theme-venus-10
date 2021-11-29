@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+/**
+ * This is search page.
+ *
+ * @package WordPress
+ * @subpackage NobleVenus
+ * @since NobleVenus 1.0
+ */
+
+get_header(); ?>
 
 <h2 class="pageTitle">サイト内検索<span>search</span></h2>
 

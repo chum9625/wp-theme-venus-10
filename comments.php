@@ -1,3 +1,13 @@
+<?php
+/**
+ * This is comments page.
+ *
+ * @package WordPress
+ * @subpackage NobleVenus
+ * @since NobleVenus 1.0
+ */
+
+?>
 <section class="comments">
 	<?php
 	$comment_form_args = array(
