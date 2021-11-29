@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+/**
+ * This is special page.
+ *
+ * @package WordPress
+ * @subpackage NobleVenus
+ * @since NobleVenus 1.0
+ */
+
+get_header(); ?>
 
 <?php
 if ( have_posts() ) :
@@ -24,17 +33,17 @@ if ( have_posts() ) :
 			<div class="lp_body">
 					<div class="row">
 						<div class="col-md-6">
-							<div class="lp_pic lp_pic-sm" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/special/pic-1.jpg')"></div>
-							<div class="lp_pic lp_pic-sm" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/special/pic-2.jpg')"></div>
+							<div class="lp_pic lp_pic-sm" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/special/pic-1.jpg')"></div>
+							<div class="lp_pic lp_pic-sm" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/special/pic-2.jpg')"></div>
 						</div>
 						<div class="col-md-6">
-							<div class="lp_pic lp_pic-lg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/special/pic-3.jpg')"></div>
+							<div class="lp_pic lp_pic-lg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/special/pic-3.jpg')"></div>
 						</div>
 					</div>
 			</div>
 		</section>
 	</div>
 </main>
-	<?php endwhile; ?>
-	<?php endif; ?>
-	<?php get_footer(); ?>
+<?php endwhile; ?>
+<?php endif; ?>
+<?php get_footer(); ?>

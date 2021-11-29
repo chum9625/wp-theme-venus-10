@@ -1,11 +1,13 @@
 <?php
 /**
- * Template Name: 住所付きテンプレート
- * Description: サイドバーに住所も表示されるテンプレート
+ * This is template-address page.
+ *
+ * @package WordPress
+ * @subpackage NobleVenus
+ * @since NobleVenus 1.0
  */
 
-?>
-<?php get_header(); ?>
+get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
 	<?php
@@ -13,7 +15,7 @@
 		the_post();
 		?>
 
-	<h2 class="pageTitle"><?php the_title(); ?><span><?php echo ( $post->post_name ); ?></span></h2>
+	<h2 class="pageTitle"><?php the_title(); ?><span><?php echo esc_html( $post->post_name ); ?></span></h2>
 
 		<?php get_template_part( 'template-parts/breadcrumb' ); ?>
 

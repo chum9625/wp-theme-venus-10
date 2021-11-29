@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+/**
+ * This is page template.
+ *
+ * @package WordPress
+ * @subpackage NobleVenus
+ * @since NobleVenus 1.0
+ */
+
+get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
 	<?php
@@ -6,7 +15,7 @@
 		the_post();
 		?>
 
-	<h2 class="pageTitle"><?php the_title(); ?><span><?php echo ( $post->post_name ); ?></span></h2>
+	<h2 class="pageTitle"><?php the_title(); ?><span><?php echo esc_html( $post->post_name ); ?></span></h2>
 
 		<?php get_template_part( 'template-parts/breadcrumb' ); ?>
 
@@ -18,7 +27,7 @@
 		</div>
 	</main>
 
-	<?php endwhile; ?>
-	<?php endif; ?>
+<?php endwhile; ?>
+<?php endif; ?>
 
 <?php get_footer(); ?>

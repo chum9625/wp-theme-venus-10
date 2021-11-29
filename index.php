@@ -1,13 +1,13 @@
 <?php
 /**
- * Index of Tomo Venus theme.
+ * This is index page.
  *
- * @package Tomo Venus
+ * @package WordPress
+ * @subpackage NobleVenus
+ * @since NobleVenus 1.0
  */
 
-?>
-
-<?php get_header(); ?>
+get_header(); ?>
 
 <h2 class="pageTitle">更新情報<span>update</span></h2>
 
@@ -35,7 +35,10 @@
 						<?php endwhile; ?>
 					<?php endif; ?>
 					</div>
-					<?php if( function_exists( 'wp_pagenavi' ) ) {  wp_pagenavi(); } ?>
+					<?php
+					if ( function_exists( 'wp_pagenavi' ) ) {
+						wp_pagenavi(); }
+					?>
 			</div>
 
 			<div class="col-12 col-md-3">

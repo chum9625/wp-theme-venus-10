@@ -1,8 +1,17 @@
-<?php get_header(); ?>
+<?php
+/**
+ * This is single page.
+ *
+ * @package WordPress
+ * @subpackage NobleVenus
+ * @since NobleVenus 1.0
+ */
+
+get_header(); ?>
 
 <h2 class="pageTitle">最新情報<span>news</span></h2>
 
-<?php get_template_part('template-parts/breadcrumb'); ?>
+<?php get_template_part( 'template-parts/breadcrumb' ); ?>
 
 <main class="main">
 	<div class="container">
@@ -28,7 +37,7 @@
 							<?php the_content(); ?>
 						</div>
 
-                        <?php comments_template(); ?>
+						<?php comments_template(); ?>
 					</div>
 
 					<div class="postLinks">

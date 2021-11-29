@@ -1,3 +1,14 @@
+<?php
+/**
+ * This is header page.
+ *
+ * @package WordPress
+ * @subpackage NobleVenus
+ * @since NobleVenus 1.0
+ */
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -5,12 +16,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="<?php echo get_template_directory_uri(); ?>/assets/css/styles.min.css" rel="stylesheet">
-	<link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
 	<?php
-	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css' );
+	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css', '', '1.0.0', true );
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'tomo-venus-main', get_template_directory_uri() . '/assets/js/main.js' );
+	wp_enqueue_script( 'venus-10-main', get_template_directory_uri() . '/assets/js/main.js', '', '1.0.0', true );
 	wp_head();
 	?>
 </head>
@@ -21,26 +30,26 @@
 	<header class="header">
 		<div class="header_inner">
 			<div class="header_logo">
-				<h1><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo@2x.png" alt="NOBLE VENUS"></a></h1>
+				<h1><a href="<?php echo esc_url( home_url( '' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/common/logo@2x.png" alt="NOBLE VENUS"></a></h1>
 			</div>
 
-      <div class="header_textlogo header-sp">
-        <h1><a href="<?php echo home_url(); ?>">Noble Venus</a></h1>
+	  <div class="header_textlogo header-sp">
+		<h1><a href="<?php echo esc_url( home_url() ); ?>">Noble Venus</a></h1>
 			</div>
 
 			<div class="header_desc">
-        <p><?php bloginfo( 'description' ); ?></p>
+		<p><?php bloginfo( 'description' ); ?></p>
 			</div>
 
-        <?php get_search_form(); ?>
+		<?php get_search_form(); ?>
 		</div>
 
 		<div class="header_links">
 			<nav class="gnavMainFooter">
 				<?php
 				$args = array(
-					'theme_location'       => 'main-menu',
-					'container'  => false,
+					'theme_location' => 'main-menu',
+					'container'      => false,
 				);
 				wp_nav_menu( $args );
 				?>
