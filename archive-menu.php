@@ -1,8 +1,8 @@
 <?php
 /**
- * Archive-menu of Tomo Venus theme.
+ * Archive-menu of NobleVenus theme.
  *
- * @package Tomo Venus
+ * @package NobleVenus
  */
 
 ?>

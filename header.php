@@ -10,7 +10,7 @@
 	<?php
 	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css' );
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'tomo-venus-main', get_template_directory_uri() . '/assets/js/main.js' );
+	wp_enqueue_script( 'venus-10-main', get_template_directory_uri() . '/assets/js/main.js' );
 	wp_head();
 	?>
 </head>

@@ -1,8 +1,8 @@
 <?php
 /**
- * Index of Tomo Venus theme.
+ * Index of NobleVenus theme.
  *
- * @package Tomo Venus
+ * @package NobleVenus
  */
 
 ?>
