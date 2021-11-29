@@ -1,18 +1,21 @@
 # wp-theme-venus-10
 
-- WordPress Theme NobleVenus Ver1.0
-- This theme is for beauty sites.
-- wp-theme-venus-00リポジトリの拡張版
+- WordPressテーマ： [Noble Venus](https://cms.chum9625.com/venus-10/)
+- wp-theme-venus-00の拡張版
 
-## 開発環境
+## コンセプト
+
+- This theme is for beauty sites.
+- オーナーが簡単に特定部分の更新ができる
+
+## 開発ツール
 
 - Local
 - VScode
-- Windows 10
+- Inkscape
 
 ## Must
 
-- テーマは1つのみで開発する。
 - All in one migrationプラグイン必須。
 - 上記プラグインにてバックアップを作成し、git管理外に配置すること。（サイズ超過のためpush不可）
 - サニタイズ処理
