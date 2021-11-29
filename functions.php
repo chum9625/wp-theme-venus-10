@@ -103,53 +103,6 @@ function register_my_menus() {
 }
 add_action( 'after_setup_theme', 'register_my_menus' );
 
-// ダッシュボードウィジットのカスタマイズ--!
-/**
- * Undocumented function
- *
- * @return void
- */
-function wpqw_remove_dashboard_widget() {
-	if ( ! current_user_can( 'administrator' ) ) {
-		remove_action( 'welcome_panel', 'wp_welcome_panel' );
-		remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
-		remove_meta_box( 'dashboard_activity', 'dashboard', 'normal' );
-		remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
-		remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );
-	}
-}
-add_action( 'wp_dashboard_setup', 'wpqw_remove_dashboard_widget' );
-
-// ダッシュボードサイドメニューのカスタマイズ--!
-/**
- * Undocumented function
- *
- * @return void
- */
-function remove_menus() {
-	if ( ! current_user_can( 'administrator' ) ) {
-		remove_menu_page( 'wpcf7' ); // Contact Form 7--!
-		// remove_menu_page( 'upload.php' ); //                メディア--!
-		remove_menu_page( 'edit-comments.php' );// コメント--!
-		remove_menu_page( 'themes.php' ); // 外観--!
-		remove_menu_page( 'users.php' ); // ユーザー--!
-		remove_menu_page( 'profile.php' ); // プロフィール--!
-		remove_menu_page( 'tools.php' ); // ツール--!
-	}
-}
-add_action( 'admin_menu', 'remove_menus' );
-
-// WordPressダッシュボードのフッターテキストを変更する--!
-/**
- * Undocumented function
- *
- * @return void
- */
-function custom_admin_footer() {
-	echo 'いつもありがとうございます。<a href="https://www.chum9625.com/" target="_blank" rel="noopener">ChumTech</a>　=・ω・=';
-}
-add_filter( 'admin_footer_text', 'custom_admin_footer' );
-
 /**
  * Undocumented function
  *

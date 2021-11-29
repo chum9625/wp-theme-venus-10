@@ -16,12 +16,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<?php
-	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css', '', '1.0.0', true );
-	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'venus-10-main', get_template_directory_uri() . '/assets/js/main.js', '', '1.0.0', true );
-	wp_head();
-	?>
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
