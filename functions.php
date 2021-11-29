@@ -110,9 +110,9 @@ add_action( 'after_setup_theme', 'register_my_menus' );
  */
 function venus_10_scripts() {
 	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css', '', '1.0', false );
-	wp_enqueue_style( 'venus-10-style-min', get_template_directory_uri() . './assets/css/styles.min.css', '', '1.0', false );
-	wp_enqueue_style( 'venus-10-style', get_template_directory_uri() . './assets/css/styles.css', '', '1.0', false );
+	wp_enqueue_style( 'venus-10-style-min', get_template_directory_uri() . '/assets/css/styles.min.css', '', '1.0', false );
+	wp_enqueue_style( 'venus-10-style', get_template_directory_uri() . '/assets/css/styles.css', '', '1.0', false );
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'venus-10-main', get_template_directory_uri() . './assets/js/main.js', '', '1.0', false );
+	wp_enqueue_script( 'venus-10-main', get_template_directory_uri() . '/assets/js/main.js', '', '1.0', false );
 }
 add_action( 'wp_enqueue_scripts', 'venus_10_scripts' );
